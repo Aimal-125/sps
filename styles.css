@@ -1,0 +1,299 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+  background-size: 50% 50%, 80% 80%;
+}
+.miniContainer {
+  width: 90%;
+  height: 85%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.div1, .div2 {
+  width: 50%;
+  height: 50%;
+}
+.div3 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.d1, .d2, .d3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m1, .m2, .m3 {
+  width: 95%;
+  height: 85%;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.7rem;
+  background: hsl(300, 43%, 22%);
+  color: white;
+}
+.m1 {
+  top: -3%;
+}
+.m2 {
+  top: 1%;
+}
+.m3 {
+  top: 4%;
+}
+.imgdiv {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.imgdiv span img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  clip-path: circle(50%);
+}
+.tdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+q {
+  font-weight: bold;
+  font-size: 2vh;
+}
+.pdiv {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 2vh;
+  font-weight: bold;
+}
+.p2 {
+  color: hsl(333, 80%, 67%);
+}
+.div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.hd {
+  color: hsl(300, 43%, 22%);
+}
+.smallpara {
+  font-size: 15px;
+  color: hsl(303, 10%, 53%);
+}
+.div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.sdiv1, .sdiv2, .sdiv3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 80%;
+  position: relative;
+  border-radius: 10px;
+  background: hsl(300, 24%, 96%);
+}
+.sdiv1 {
+  left: -3%;
+}
+.sdiv2 {
+  left: 1%;
+}
+.sdiv3 {
+  left: 5%;
+}
+.stars {
+  width: 30%;
+  gap: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stars span img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.sdiv1 p, .sdiv2 p, .sdiv3 p {
+  width: 70%;
+  font-size: 2vh;
+  padding: 5px;
+  font-weight: bold;
+  color: hsl(300, 43%, 22%);
+}
+
+@media screen and (max-width: 800px) {
+  .hd {
+    font-size: 4vh;
+  }
+  .smallpara {
+    font-size: 2vh;
+  }
+  .sdiv1 p, .sdiv2 p, .sdiv3 p {
+    font-size: 1.5vh;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .hd {
+    font-size: 5vh;
+  }
+  .smallpara {
+    font-size: 3vh;
+  }
+  .sdiv1 p, .sdiv2 p, .sdiv3 p {
+    font-size: 2.5vh;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hd {
+    font-size: 6vh;
+  }
+  .smallpara {
+    font-size: 3vh;
+  }
+  .imgdiv {
+    width: 60px;
+    height: 60px;
+  }
+  .m1, .m2, .m3 {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .hd {
+    font-size: 6vh;
+  }
+  .smallpara {
+    font-size: 3vh;
+  }
+  .imgdiv {
+    width: 60px;
+    height: 60px;
+  }
+  .m1, .m2, .m3 {
+    padding: 2rem;
+  }
+  .stars {
+    width: 150px;
+  }
+  .sdiv1 p, .sdiv2 p, .sdiv3 p {
+    width: 100%;
+  } 
+}
+
+@media screen and (min-width: 2000px) {
+  .m1, .m2, .m3 {
+    padding: 3rem;
+  }
+  .pdiv {
+    gap: 2.5rem;
+  }
+  .imgdiv {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    height: initial;
+    background-size: 100% 15%, 100% 50%;
+  }
+  .miniContainer {
+    flex-direction: column;
+  }
+  .div1, .div2 {
+    width: 100%;
+  }
+  .div1 {
+    text-align: center;
+    padding: 2rem;
+    padding-top: 3.5rem;
+  }
+  .smallpara {
+    padding-top: 1rem;
+  }
+  .div2 {
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .stars {
+    width: 100%;
+  }
+  .sdiv1 p, .sdiv2 p, .sdiv3 p {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  .div3 {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .m1, .m2, .m3 {
+    width: 100%;
+    height: 100%;
+    position: initial;
+  }
+  .sdiv1, .sdiv2, .sdiv3 {
+    position: initial;
+    width: 100%;
+    flex-direction: column;
+  }
+  .d1, .d2, .d3 {
+    padding: 1rem;
+  }
+  .pdiv {
+    padding: 1rem;
+  }
+  .qdiv {
+    padding: 1rem;
+  }
+  .attribution {
+    margin: 1rem 0;
+  }
+}
